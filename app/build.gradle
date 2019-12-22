@@ -37,5 +37,6 @@ dependencies {
 
 
     implementation project(":apirequests")
+    implementation project(":daos")
 
 }
