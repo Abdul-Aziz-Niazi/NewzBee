@@ -54,7 +54,7 @@ object Utils {
             dateFormat.format(date)
         } catch (e: ParseException) {
             e.printStackTrace()
-            oldstringDate
+            return oldstringDate
         }
         return newDate
     }

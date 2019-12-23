@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.az3ez.daos.NewsArticle
 import com.az3ez.newzbee.R
+import com.az3ez.newzbee.Utils.Utils
 
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
@@ -44,8 +45,8 @@ class Adapter(private val mArticleList: List<NewsArticle>, private val mContext:
         val model = mArticleList[position]
 
         val requestOptions = RequestOptions()
-        requestOptions.placeholder(Utils.getRandomDrawbleColor())
-        requestOptions.error(Utils.getRandomDrawbleColor())
+        requestOptions.placeholder(Utils.randomDrawbleColor)
+        requestOptions.error(Utils.randomDrawbleColor)
         requestOptions.diskCacheStrategy(DiskCacheStrategy.ALL)
         requestOptions.centerCrop()
 
